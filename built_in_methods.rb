@@ -76,6 +76,22 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# the .length method is called on the string object and returns an integer value for the length.
+# the value also includes the spaces between the words. the puts commands prints it in our
+# terminal so that we know that the code is running and has the desired effect.
+place = "Salt Lake City"
+puts place.length
+
+# the .slice! method is called upon a string object and has two arguements being passed. The two
+# arguements being passed are the index positions in the string inclusive. Inclusive being that 
+# index 5 'g' is included in the .slice! opposed to the .slice! stopping before the 5th index. 
+# this returns another string 'belong'. One arguement can also be passed and that selects the
+# letter at the corresponding index. Due to order of operations I had to redefine the variable. 
+last_name = "Belongea"
+puts last_name.slice!(0..5)
+last_name = "Belongea"
+puts last_name.slice!(3)
+
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -84,6 +100,14 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The .to_s method being called on an integer object coverts the integer to a string. 
+num = 14
+puts num.to_s
+
+# the .div method is called upon a variable containing an integer. One argument is passed.
+# in this example 12 is being divided by 3. 
+nums = 12
+puts nums.div(3)
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
